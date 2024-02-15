@@ -4,11 +4,7 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 
 const AuthLayout = () => {
-  return (
-    <div>
-      <Outlet />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default AuthLayout;
