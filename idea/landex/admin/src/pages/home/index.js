@@ -3,7 +3,7 @@ import Header from "../../components/header";
 import Sidebar from "../../components/sidebar";
 
 const Home = () => {
-  return <div></div>;
+  return <div>TEST</div>;
 };
 
 export default Home;
