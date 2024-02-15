@@ -24,6 +24,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'adress',
+        'phone',
+        'rip'
 
 
     ];
@@ -53,7 +56,7 @@ class User extends Authenticatable
      */
 
 
-    final public function getUserByEmailOrPhone(array $input): Builder|Model|null
+    final public function getClientsByEmailOrPhone(array $input): Builder|Model|null
     {
         return self::where('email', $input['email'])->first();
     }
