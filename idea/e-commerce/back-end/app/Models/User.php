@@ -4,9 +4,12 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use PhpParser\Builder;
+use PhpParser\Node\Expr\Cast\Object_;
 
 class User extends Authenticatable
 {
@@ -21,6 +24,13 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'localisation',
+        'phone',
+        'role_id',
+        'adresse',
+        'rip_bancaire',
+
+
     ];
 
     /**
@@ -40,6 +50,16 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
-        'password' => 'hashed',
     ];
+
+    /**
+     * @param array $input
+     * @return Builder|Model|Object|null
+     */
+
+
+    final public function getUserByEmailOrPhone(array $input): Builder|Model|null
+    {
+        return self::where('email', $input['email'])->first();
+    }
 }

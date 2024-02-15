@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { RouterProvider } from "react-router-dom";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import LoginRouter from "./routes/LoginRouter";
+import ProjectRouter from "./routes/ProjectRouter";
 
 function App() {
+  const [auth, setAuth] = useState(false);
+
+  useEffect(() => {
+    if (localStorage.token != undefined) {
+      setAuth(true);
+      axios.defaults.headers.common["Authorization"] =
+        "Bearer " + localStorage.token;
+    }
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {auth ? (
+        <RouterProvider router={ProjectRouter} />
+      ) : (
+        <RouterProvider router={LoginRouter} />
+      )}
+    </>
   );
 }
 
