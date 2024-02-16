@@ -12,7 +12,6 @@ const ProjectRouter = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
-      
     ],
   },
 ]);

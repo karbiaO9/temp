@@ -84,11 +84,11 @@ const Header = () => {
   }, []);
 
   return (
-    
-
-    <button onClick={handlelogout} className="dropdown-item">
-      Logout
-    </button>
+    <div>
+      <button onClick={handlelogout} className="dropdown-item">
+        Logout
+      </button>
+    </div>
   );
 };
 
