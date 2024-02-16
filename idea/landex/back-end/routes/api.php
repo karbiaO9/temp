@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ClientsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,12 +16,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('login', [AuthController::class, 'login']);
+Route::post('client/login', [ClientsController::class, 'login']);
+Route::group(['middleware' => 'auth:sanctum'], function () {
+    Route::post('logout', [AuthController::class, 'logout']);
+    Route::post('client/logout', [ClientsController::class, 'logout']);
+});
 
-Route::group(
-    ['middleware' => 'auth:sanctum'],
-    function () {
-        Route::post('logout', [AuthController::class, 'logout']);
-       
-    }
 
-);
+
+

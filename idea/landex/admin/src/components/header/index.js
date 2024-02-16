@@ -30,7 +30,6 @@ const Header = () => {
           .then((res) => {
             localStorage.removeItem("email");
             localStorage.removeItem("name");
-            localStorage.removeItem("phone");
             localStorage.removeItem("token");
             navigate("/");
 

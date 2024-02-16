@@ -1,10 +1,10 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 
 const AuthLayout = () => {
-  return <div></div>;
+  return <NavLink to="/Login">Login</NavLink>;
 };
 
 export default AuthLayout;

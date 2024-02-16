@@ -11,7 +11,7 @@ use Laravel\Sanctum\HasApiTokens;
 use PhpParser\Builder;
 use PhpParser\Node\Expr\Cast\Object_;
 
-class User extends Authenticatable
+class Clients extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 

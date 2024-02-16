@@ -18,6 +18,8 @@ class clientseeder extends Seeder
         $data = [
             'name' => 'Admin',
             'email' => 'admin@gmail.com',
+            'phone' => '96385274',
+            'adress' => 'test',
             'password' => Hash::make('12345678'),
 
 

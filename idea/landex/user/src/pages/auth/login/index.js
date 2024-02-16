@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./index.scss";
-import logo from "../../../assets/login_logo.png";
 import axios from "axios";
 import Constants from "../../../Constants";
 import { useNavigate } from "react-router-dom";
@@ -16,13 +15,14 @@ const Login = () => {
   };
   const handleLogin = () => {
     axios
-      .post(Constants.BASE_URL + "/login", input)
+      .post(Constants.BASE_URL + "/client/login", input)
       .then((res) => {
         localStorage.email = res.data.email;
         localStorage.name = res.data.name;
         localStorage.phone = res.data.phone;
         localStorage.token = res.data.token;
         window.location.reload();
+        window.location.href = "/";
       })
       .catch((errors) => {
         if (errors.response.status == 422) {
@@ -33,9 +33,6 @@ const Login = () => {
   return (
     <div className="Login">
       <div className="box">
-        <div className="logo">
-          <img src={logo} alt="Logo" />
-        </div>
         <div className="label">
           <div className="label1">
             <span>E-mail</span>
