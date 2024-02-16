@@ -15,10 +15,7 @@ const ProjectRouter = createBrowserRouter([
       },
     ],
   },
-  {
-    path: "/login",
-    element: <Login />,
-  },
+
 ]);
 
 export default ProjectRouter;
