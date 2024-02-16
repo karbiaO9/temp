@@ -1,0 +1,67 @@
+.Login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; // Ensures the Login component covers the entire viewport height
+}
+
+.box {
+    max-height: 400px; // Adjust the maximum height as needed
+    width: 300px; // Adjust the width as needed
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add additional styles as needed */
+.logo {
+    text-align: center;
+}
+
+img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.label {
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+
+}
+
+.label1,
+.label2 {
+    margin-bottom: 10px;
+
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.flat_button {
+    margin-right: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black; // Set border here
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease; // Add border-color transition
+}
+
+.flat_button:hover {
+    background-color: black;
+    color: white; // Change border color on hover
+}
