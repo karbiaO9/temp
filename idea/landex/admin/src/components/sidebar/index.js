@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 const Sidebar = () => {
   return (
     <div>
-      <NavLink to="/invest">invest</NavLink>
     </div>
   );
 };
