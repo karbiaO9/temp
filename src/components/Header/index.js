@@ -25,6 +25,12 @@ const Header = (props) => {
           >
             Secondary Market
           </Text>
+          <Text
+            className="text-center text-green-900 text-xl tracking-[0.40px] w-auto"
+            size="txtABeeZeeRegular20Green900"
+          >
+            Portfolio
+          </Text>
         </div>
         <Button
           className="flex h-10 items-center justify-center md:ml-[0] ml-[455px] md:mt-0 my-5 rounded-lg w-10"
@@ -63,6 +69,7 @@ const Header = (props) => {
             Sign Up
           </Button>
         </NavLink>
+        
       </header>
     </>
   );
