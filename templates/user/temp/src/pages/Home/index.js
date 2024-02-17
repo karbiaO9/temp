@@ -1,16 +1,17 @@
 import React from "react";
 
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 import { Button, Img, Input, Line, List, Text } from "components";
 import Footer from "components/Footer";
+
 
 const Home = () => {
   const navigate = useNavigate();
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-abeezee items-center justify-start mx-auto w-full">
+      <div className="bg-white-A700 flex flex-col font-abeezee items-center justify-center mx-auto w-full">
         <div className="md:h-[720px] h-[783px] md:px-5 relative w-full">
           <Img
             className="absolute bottom-[0] h-[720px] inset-x-[0] mx-auto"
@@ -20,19 +21,20 @@ const Home = () => {
           <div className="absolute h-[698px] inset-x-[0] mx-auto top-[0] w-full">
             <Img
               className="h-[698px] m-auto object-cover w-full"
-              src="images/img_unsplash0agtpoaarte.png"
+              src="images/sld.jpg "
               alt="unsplash0agtpoa"
             />
-            <div className="absolute bottom-[7%] flex flex-col inset-x-[0] items-center justify-start mx-auto w-[46%]">
+            <div className="absolute bottom-[7%] flex flex-col inset-x-[0] items-center  mx-auto  w-[46%]">
               <Text
                 className="italic md:text-5xl sm:text-[42px] text-[56px] text-center text-white-A700"
                 size="txtABeeZeeItalic56"
               >
                 Invest in Land in Minutes
               </Text>
+              <NavLink to="/login">
               <Button
-                className="common-pointer cursor-pointer min-w-[200px] mt-8 text-center text-lg"
-                onClick={() => navigate("")}
+  className="common-pointer cursor-pointer min-w-[200px] mt-8 text-center text-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-green-600 hover:text-white"
+  onClick={() => navigate("")}
                 shape="round"
                 color="white_A700"
                 size="lg"
@@ -40,7 +42,9 @@ const Home = () => {
               >
                 Join now
               </Button>
-              <div className="flex md:flex-col flex-row md:gap-5 items-center justify-start mt-[58px] w-full">
+              </NavLink>
+
+              <div className="flex md:flex-col flex-row md:gap-5 items-center justify-center mt-[58px] w-full">
                 <div className="flex flex-col gap-[31px] items-center justify-start">
                   <Text
                     className="italic sm:text-4xl md:text-[38px] text-[40px] text-center text-white-A700 tracking-[1.20px]"
@@ -661,13 +665,12 @@ const Home = () => {
                     </Text>
                   </div>
                 </div>
-                <div className="bg-gray-50 flex flex-col items-center justify-start p-6 sm:px-5 rounded-[24px] shadow-bs3 w-full">
+                <div className="bg-gray-50 flex flex-col items-center justify-center p-6 sm:px-5 rounded-[24px] shadow-bs3 w-full">
                   <Text
                     className="leading-[130.00%] text-black-900_01 text-xl w-full"
                     size="txtABeeZeeRegular20"
                   >
-                    Retail and institutional investors can start investing in
-                    the listed lands.
+                    Retail and institutional investors can start investing in the listed lands.
                   </Text>
                 </div>
               </div>
@@ -951,11 +954,15 @@ const Home = () => {
             alt="rectangleTwentyFour"
           />
           <div className="absolute flex flex-col h-max inset-[0] justify-center m-auto w-[68%]">
-            <Text
-              className="italic text-5xl sm:text-[38px] md:text-[44px] text-gray-50 tracking-[1.44px]"
-              size="txtABeeZeeItalic48Gray50"
+            
+          <Text
+              className="leading-[140.00%] md:ml-[0] ml-[137px] mt-[33px] text-4xl md:text-[22px] text-center text-gray-50 sm:text-xl tracking-[0.72px] w-[77%] sm:w-full"
+              size="txtMontserratRegular24"
             >
+              <span className="text-gray-50 font-abeezee font-bold">
               Interested in selling a land? Let us know!
+              </span>
+              
             </Text>
             <Text
               className="leading-[140.00%] md:ml-[0] ml-[137px] mt-[33px] text-2xl md:text-[22px] text-center text-gray-50 sm:text-xl tracking-[0.72px] w-[77%] sm:w-full"

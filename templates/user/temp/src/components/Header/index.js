@@ -7,11 +7,13 @@ const Header = (props) => {
   return (
     <>
       <header className={props.className}>
+      <NavLink to='/'>
         <Img
           className="h-[72px] md:ml-[0] ml-[13px] md:mt-0 my-1"
           src="images/img_uikitlogo.svg"
           alt="uikitlogo"
         />
+        </NavLink>
         <div className="flex flex-row gap-10 items-start justify-start md:ml-[0] ml-[57px] md:mt-0 my-[27px] w-auto">
           <Text
             className="text-center text-green-900 text-xl tracking-[0.40px] w-auto"
@@ -24,6 +26,12 @@ const Header = (props) => {
             size="txtABeeZeeRegular20Green900"
           >
             Secondary Market
+          </Text>
+          <Text
+            className="text-center text-green-900 text-xl tracking-[0.40px] w-auto"
+            size="txtABeeZeeRegular20Green900"
+          >
+            Portfolio
           </Text>
         </div>
         <Button
@@ -63,6 +71,7 @@ const Header = (props) => {
             Sign Up
           </Button>
         </NavLink>
+        
       </header>
     </>
   );
