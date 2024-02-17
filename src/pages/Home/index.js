@@ -565,20 +565,17 @@ const Home = () => {
             src="images/img_image8.png"
             alt="imageEight"
           />
-          <div className="absolute flex flex-col md:gap-10 gap-[62px] h-full inset-y-[0] justify-start left-[0] my-auto w-[64%]">
+          <div className="absolute flex flex-col md:gap-10 gap-[62px] h-full inset-y-[0] justify-start left-[0] my-auto w-[64%] mr-4">
             <Text
               className="italic md:ml-[0] ml-[360px] text-5xl sm:text-[38px] md:text-[44px] text-black-900 text-center"
               size="txtABeeZeeItalic48"
             >
               <span className="text-black-900 font-abeezee font-normal italic">
-                Why Land
-              </span>
-              <span className="text-green-900 font-abeezee font-normal italic">
-                Ex
+                Why coding
               </span>
             </Text>
             <div className="flex flex-col gap-10 items-center justify-start mr-[149px] w-[77%] md:w-full">
-              <div className="bg-gray-50 flex flex-col gap-[7px] items-start justify-start p-[19px] rounded-[16px] shadow-bs2 w-full">
+              <div className="bg-gray-50 flex flex-col gap-[7px] items-start justify-start p-[19px] rounded-[16px] shadow-2xl w-full">
                 <Text
                   className="italic ml-1 md:ml-[0] text-2xl md:text-[22px] text-green-900 sm:text-xl tracking-[0.72px]"
                   size="txtABeeZeeItalic24Green900"
@@ -586,14 +583,14 @@ const Home = () => {
                   Easy to Use
                 </Text>
                 <Text
-                  className="leading-[130.00%] mb-[5px] ml-1 md:ml-[0] text-blue_gray-900 text-lg tracking-[0.54px] w-[98%] sm:w-full"
+                  className="leading-[130.00%] mb-[5px] ml-1 md:ml-[0] text-blue_gray-900 text-lg tracking-[0.54px] w-[98%]  sm:w-full"
                   size="txtABeeZeeRegular18"
                 >
                   Effortless access and predictive analytics with secondary
                   market for liquidity
                 </Text>
               </div>
-              <div className="bg-gray-50 flex flex-col gap-2.5 items-start justify-start p-4 rounded-[16px] shadow-bs2 w-full">
+              <div className="bg-gray-50 flex flex-col gap-2.5 items-start justify-start p-4 rounded-[16px] shadow-2xl w-full">
                 <Text
                   className="italic ml-1.5 md:ml-[0] text-2xl md:text-[22px] text-green-900 sm:text-xl tracking-[0.72px]"
                   size="txtABeeZeeItalic24Green900"
@@ -608,7 +605,7 @@ const Home = () => {
                   layer provided by collateral agent
                 </Text>
               </div>
-              <div className="bg-gray-50 flex flex-col gap-[7px] items-start justify-start p-[19px] rounded-[16px] shadow-bs2 w-full">
+              <div className="bg-gray-50 flex flex-col gap-[7px] items-start justify-start p-[19px] rounded-[16px] shadow-2xl w-full   ">
                 <Text
                   className="italic ml-1 md:ml-[0] text-2xl md:text-[22px] text-green-900 sm:text-xl tracking-[0.72px]"
                   size="txtABeeZeeItalic24Green900"
@@ -622,7 +619,7 @@ const Home = () => {
                   We provide direct access to Carbon projects, Organic farming
                   and Sustainable forestry
                 </Text>
-              </div>
+              </div> 
             </div>
           </div>
         </div>
@@ -633,18 +630,11 @@ const Home = () => {
               size="txtABeeZeeItalic48"
             >
               <span className="text-black-900 font-abeezee font-normal italic">
-                How Land
-              </span>
-              <span className="text-green-900 font-abeezee font-normal italic">
-                Ex
-              </span>
-              <span className="text-black-900 font-abeezee font-normal italic">
-                {" "}
-                works
+                How coding works
               </span>
             </Text>
             <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between w-full">
-              <div className="flex flex-col gap-12 items-center justify-start">
+              <div className="flex flex-col gap-12 items-center mr-4 justify-start">
                 <div className="flex flex-col gap-12 items-center justify-start w-full">
                   <div className="bg-gray-50 flex flex-col items-center justify-start p-[11px] rounded-[24px] shadow-bs3 w-full">
                     <Text
@@ -674,6 +664,8 @@ const Home = () => {
                   </Text>
                 </div>
               </div>
+
+              
               <Img
                 className="h-[396px] md:h-auto object-cover rounded-[16px]"
                 src="images/img_unsplashvdhbkvg1hq.png"
@@ -689,199 +681,7 @@ const Home = () => {
           >
             Asset-Backed Investment
           </Text>
-          <Text
-            className="italic leading-[32.00px] mt-[27px] text-2xl md:text-[22px] text-black-900 text-center sm:text-xl tracking-[0.24px] w-[95%] sm:w-full"
-            size="txtABeeZeeItalic24Black900"
-          >
-            Investors own fractional investments that refer to the specific land
-            plot via a loan agreement with interest dependent on asset value.
-          </Text>
-          <Text
-            className="mt-6 text-black-900 text-lg tracking-[0.18px]"
-            size="txtABeeZeeRegular18Black900"
-          >
-            <>
-              LandEx’s goal is to get our investors as close as possible to
-              owning land. However, since “fractionalization of land” is legally
-              not possible, it is not possible to offer our investors ownership
-              in the company that owns the land, as the regulatory costs would
-              then go into millions of euros.
-              <br />
-              <br />
-              We found a solution using the typical crowdfunding playbook, where
-              a loan contract is used for investing. LandEx lands loan contract
-              is with variable interests, so that the value depends on the price
-              of the asset and the investors benefit from the full increase of
-              the asset value. As the land has no other loans, there is no
-              chance of bankruptcy. The loan investment is backed by a mortgage
-              set for that specific land which is held by a collateral agent.
-            </>
-          </Text>
-          <div className="flex flex-col items-center justify-end mt-2 pt-[13px] px-[13px] w-full">
-            <div className="flex md:flex-col flex-row md:gap-5 items-center justify-start w-full">
-              <div className="h-[362px] md:h-[452px] sm:h-[688px] relative w-[62%] md:w-full">
-                <div className="absolute h-[355px] md:h-[452px] sm:h-[688px] inset-[0] justify-center m-auto w-full">
-                  <div className="absolute flex flex-col h-max inset-[0] items-center justify-center m-auto w-full">
-                    <div className="flex flex-col gap-1.5 items-center justify-start w-full">
-                      <div className="flex sm:flex-col flex-row sm:gap-10 items-start justify-between w-full">
-                        <div className="flex sm:flex-1 flex-col gap-[13px] items-start justify-start w-[39%] sm:w-full">
-                          <div className="bg-gray-50 border border-blue_gray-200 border-solid flex flex-col items-center justify-end p-[11px] rounded-[9px] shadow-bs4 w-full">
-                            <Text
-                              className="italic mt-0.5 text-[14.96px] text-black-900 text-center tracking-[0.15px]"
-                              size="txtABeeZeeItalic1496"
-                            >
-                              Land Exchange Lands OU
-                            </Text>
-                            <Text
-                              className="leading-[19.00px] mt-[3px] text-[13.3px] text-blue_gray-900 text-center tracking-[0.27px] w-[90%] sm:w-full"
-                              size="txtABeeZeeRegular133"
-                            >
-                              Special-licensed company for buying land
-                            </Text>
-                          </div>
-                          <div className="bg-gray-50 border border-blue_gray-200 border-solid flex flex-col items-center justify-end p-[11px] rounded-[9px] shadow-bs4">
-                            <Text
-                              className="italic text-[13.3px] text-black-900 tracking-[0.27px]"
-                              size="txtABeeZeeItalic133"
-                            >
-                              1st land plot
-                            </Text>
-                          </div>
-                          <div className="bg-gray-50 border border-blue_gray-200 border-solid flex flex-col items-end justify-end p-[11px] rounded-[9px] shadow-bs4">
-                            <Text
-                              className="italic mr-0.5 text-[13.3px] text-black-900 tracking-[0.27px]"
-                              size="txtABeeZeeItalic133"
-                            >
-                              2nd land plot
-                            </Text>
-                          </div>
-                          <div className="bg-gray-50 border border-blue_gray-200 border-solid flex flex-col items-center justify-end p-[11px] rounded-[9px] shadow-bs4">
-                            <Text
-                              className="italic text-[13.3px] text-black-900 tracking-[0.27px]"
-                              size="txtABeeZeeItalic133"
-                            >
-                              3rd land plot
-                            </Text>
-                          </div>
-                        </div>
-                        <div className="flex sm:flex-1 flex-col gap-[5px] items-center justify-start sm:mt-0 mt-4 w-1/5 sm:w-full">
-                          <Text
-                            className="italic text-[13.3px] text-blue_gray-900 text-center tracking-[0.27px]"
-                            size="txtABeeZeeItalic133Bluegray900"
-                          >
-                            Funding
-                          </Text>
-                          <Img
-                            className="h-[9px]"
-                            src="images/img_union.svg"
-                            alt="union"
-                          />
-                        </div>
-                        <div className="bg-gray-50 border border-blue_gray-200 border-solid flex flex-col items-center justify-start mb-[159px] p-8 sm:px-5 rounded-[9px] shadow-bs4">
-                          <Text
-                            className="italic text-[14.96px] text-black-900 text-center tracking-[0.15px]"
-                            size="txtABeeZeeItalic1496"
-                          >
-                            LandEx Marketplace OU
-                          </Text>
-                        </div>
-                      </div>
-                      <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start w-full">
-                        <div className="bg-gray-50 border border-blue_gray-200 border-solid flex flex-col items-center justify-end mb-[46px] md:mt-0 mt-[7px] p-[11px] rounded-[9px] shadow-bs4">
-                          <Text
-                            className="italic text-[13.3px] text-black-900 tracking-[0.27px]"
-                            size="txtABeeZeeItalic133"
-                          >
-                            4th land plot
-                          </Text>
-                        </div>
-                        <Text
-                          className="italic md:ml-[0] ml-[135px] text-[13.3px] text-blue_gray-900 text-center tracking-[0.27px]"
-                          size="txtABeeZeeItalic133Bluegray900"
-                        >
-                          Mortgages
-                        </Text>
-                        <div className="bg-gray-50 border border-blue_gray-200 border-solid md:h-[60px] h-[86px] md:ml-[0] ml-[55px] md:mt-0 mt-[7px] relative rounded-[9px] shadow-bs4 w-[39%] md:w-full">
-                          <Text
-                            className="absolute inset-x-[0] italic mx-auto text-[14.96px] text-black-900 text-center top-[14%] tracking-[0.15px] w-max"
-                            size="txtABeeZeeItalic1496"
-                          >
-                            Collateral agent
-                          </Text>
-                          <Text
-                            className="absolute bottom-[0] inset-x-[0] leading-[19.00px] mx-auto text-[13.3px] text-blue_gray-900 text-center tracking-[0.27px] w-full"
-                            size="txtABeeZeeRegular133"
-                          >
-                            holds mortgage, 3rd party / separate entity with
-                            separate board
-                          </Text>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <Img
-                    className="absolute bottom-[0] h-[273px] left-[12%]"
-                    src="images/img_arrow6.svg"
-                    alt="arrowSix"
-                  />
-                </div>
-                <div
-                  className="absolute bg-cover bg-no-repeat bottom-[0] flex flex-col h-[220px] items-center justify-end left-[14%] pl-2.5 pt-2.5 w-[47%]"
-                  style={{ backgroundImage: "url('images/img_arrow6.svg')" }}
-                >
-                  <div
-                    className="bg-cover bg-no-repeat flex flex-col h-[191px] items-center justify-end mt-[18px] pl-2.5 pt-2.5 w-full"
-                    style={{ backgroundImage: "url('images/img_arrow6.svg')" }}
-                  >
-                    <Img
-                      className="h-[163px] mt-[18px]"
-                      src="images/img_arrow9.svg"
-                      alt="arrowNine"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="flex md:flex-1 flex-col gap-1.5 items-center justify-start w-[39%] md:w-full">
-                <div className="flex flex-row gap-[13px] items-start justify-between w-[98%] md:w-full">
-                  <div className="flex flex-col gap-[5px] items-center justify-start mt-4">
-                    <Text
-                      className="italic text-[13.3px] text-blue_gray-900 text-center tracking-[0.27px]"
-                      size="txtABeeZeeItalic133Bluegray900"
-                    >
-                      Funding
-                    </Text>
-                    <Img
-                      className="h-[9px]"
-                      src="images/img_union_green_900.svg"
-                      alt="union_One"
-                    />
-                  </div>
-                  <Button
-                    className="border border-blue_gray-200 border-solid cursor-pointer italic min-w-[234px] rounded-[9px] shadow-bs4 text-[14.96px] text-center tracking-[0.15px]"
-                    color="gray_50"
-                    size="2xl"
-                    variant="fill"
-                  >
-                    Users
-                  </Button>
-                </div>
-                <div className="flex h-[270px] justify-end relative w-[97%]">
-                  <Text
-                    className="italic mb-[66px] ml-[42px] mt-auto text-[13.3px] text-blue_gray-900 text-center tracking-[0.27px]"
-                    size="txtABeeZeeItalic133Bluegray900"
-                  >
-                    Collateral agent contract
-                  </Text>
-                  <Img
-                    className="absolute h-[270px] inset-[0] justify-center m-auto"
-                    src="images/img_arrow10.svg"
-                    alt="arrowTen"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+           </div>
         <div className="bg-light_green-800_42 flex flex-col items-center justify-end mt-[334px] p-20 md:px-10 sm:px-5 w-full">
           <div className="flex flex-col items-center justify-start mt-[3px] w-[63%] md:w-full">
             <Text
