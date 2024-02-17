@@ -33,7 +33,7 @@ const Home = () => {
               </Text>
               <NavLink to="/login">
               <Button
-  className="common-pointer cursor-pointer min-w-[200px] mt-8 text-center text-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-green-600 hover:text-white"
+  className="common-pointer cursor-pointer min-w-[200px] mt-8 text-center text-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-700 hover:text-white"
   onClick={() => navigate("")}
                 shape="round"
                 color="white_A700"
